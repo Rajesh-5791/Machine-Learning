@@ -1,9 +1,9 @@
 import pandas as pd
 
 # Reading 'u.data' and 'u.item' datasets
-user_ratings = pd.read_csv("u.data", sep='\t', names=["user_id", "movie_id", "rating", "time_stamp"])
+user_ratings = pd.read_csv("../dataset/u.data", sep='\t', names=["user_id", "movie_id", "rating", "time_stamp"])
 movie_info = pd.read_csv(
-    "u.item", sep='|', encoding='latin-1', header=None,
+    "../dataset/u.item", sep='|', encoding='latin-1', header=None,
     names=["movie_id", "movie_title", "release_date", "video_release_date", "IMDbURL", "unknown", "action", "adventure", "animation", 
            "children's", "comedy", "crime", "documentary", "drama", "fantasy", "film-noir", "horror", "musical", "mystery", 
            "romance", "sci-fi", "thriller", "war", "western"]
